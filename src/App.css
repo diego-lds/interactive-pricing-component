@@ -1,7 +1,36 @@
 .main {
   height: 100vh;
   background-image: url('./resources/bg-pattern.svg');
+  background-size: 100% 55%;
   background-repeat: no-repeat;
-  /* no-repeat */
-  /* center center fixed; */
+  display: flex;
+  justify-content: center;
+}
+
+.center-column {
+  width: 37.5%;
+}
+
+.title-box {
+  border: thin solid red;
+  height: 32%;
+  background-image: url('./resources/pattern-circles.svg');
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 170px 170px;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-box h1 {
+  color: hsl(227, 35%, 25%);
+}
+
+.title-box span {
+  color: hsl(225, 20%, 60%);
+  font-size: 16px;
 }
