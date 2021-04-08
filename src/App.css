@@ -2,17 +2,17 @@
   height: 100vh;
   background-image: url('./resources/bg-pattern.svg');
   background-size: 100% 55%;
+  background-color: var(--color-very-pale-blue);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
 
 .center-column {
-  width: 37.5%;
+  width: 45%;
 }
 
-.title-box {
-  border: thin solid red;
+.box-title {
   height: 32%;
   background-image: url('./resources/pattern-circles.svg');
   background-position-x: center;
@@ -26,11 +26,40 @@
   flex-direction: column;
 }
 
-.title-box h1 {
+.box-title h1 {
   color: hsl(227, 35%, 25%);
 }
 
-.title-box span {
+.box-title span {
   color: hsl(225, 20%, 60%);
   font-size: 16px;
+}
+
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.views {
+  color: var(--color-grayish-blue);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.amount {
+  color: var(--color-dark-desaturated-blue);
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.time {
+  color: var(--color-grayish-blue);
+  margin-left: 10px;
+}
+
+.box-top div {
+  display: flex;
+  align-items: center;
 }
