@@ -1,5 +1,8 @@
-import './App.css';
-import { Box } from './components/box';
+import { useState } from 'react'
+import { Box, Slider } from './components'
+import 'rc-slider/assets/index.css'
+
+import './App.css'
 function App() {
   return (
     <div className="main">
@@ -16,10 +19,11 @@ function App() {
               <span className="time">/month</span>
             </div>
           </div>
+          <Slider />
         </Box>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
