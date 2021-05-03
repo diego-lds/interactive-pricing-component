@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Box, Slider } from './components'
+import { Box, Slider, Switch } from './components'
 import 'rc-slider/assets/index.css'
 
 import './App.css'
@@ -20,6 +20,12 @@ function App() {
             </div>
           </div>
           <Slider />
+          <div className="billing">
+            <label className="label-discount">25% discount</label>
+            <span>Yearly Billing</span>
+            <Switch className="billing-switch" />
+            <span>Monthly Billing</span>
+          </div>
         </Box>
       </div>
     </div>
